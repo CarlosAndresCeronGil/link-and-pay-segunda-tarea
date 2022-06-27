@@ -26,6 +26,11 @@ const styles = StyleSheet.create({
         backgroundColor: '#0075BE',
     },
 
+    container_TERCIARY: {
+        borderWidth: 1,
+        borderColor: '#0075BE',
+    },
+
     text: {
         fontWeight: 'bold',
         fontSize: 18,

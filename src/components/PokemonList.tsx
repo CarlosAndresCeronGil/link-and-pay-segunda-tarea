@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FlatList, StyleSheet, Text, View } from "react-native";
 import { gql, useQuery } from "@apollo/client";
 import PokemonItem from "./PokemonItem";
@@ -16,7 +16,9 @@ query {
 `;
 
 const PokemonList = () => {
+    
     const { data } = useQuery(POKEMON_LIST)
+
     return (
         <View>
             <FlatList 
