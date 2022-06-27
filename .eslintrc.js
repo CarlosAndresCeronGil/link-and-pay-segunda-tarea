@@ -3,6 +3,9 @@ module.exports = {
   extends: '@react-native-community',
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
+  rules: {
+    'react/prop-types': 'off'
+  },
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
@@ -11,6 +14,12 @@ module.exports = {
         'no-shadow': 'off',
         'no-undef': 'off',
       },
+    },
+  ],
+  'prettier/prettier': [
+    'error',
+    {
+      endOfLine: 'auto',
     },
   ],
 };
